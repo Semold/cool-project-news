@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Зачекайте, будь ласка...</title>
+    <title>Checking your browser... | Cloudflare</title>
 </head>
-<body>
-    <h2 style="font-family: Arial; text-align: center; margin-top: 20%;">Завантаження вмісту... Зачекайте 3 секунди.</h2>
+<body style="background-color: #f9f9f9; color: #313131; font-family: -apple-system, system-ui, sans-serif; text-align: center; padding-top: 15%;">
+    <div style="max-width: 450px; margin: 0 auto; padding: 20px; background: white; border: 1px solid #e1e1e1; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+        <h2 style="font-weight: 500; font-size: 24px; margin-bottom: 10px;">Checking if the site connection is secure</h2>
+        <p style="font-size: 14px; color: #666;">github.io needs to review the security of your connection before proceeding.</p>
+        <div style="margin: 20px auto; width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #f2741c; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+    </div>
+
+    <style>
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
 
     <script>
-        // Робот WhereGoes не виконує JavaScript-таймаути, тому він застрягне тут
         setTimeout(function() {
             window.location.href = "https://youtu.be";
-        }, 2500); 
+        }, 3000); 
     </script>
 </body>
 </html>
-
